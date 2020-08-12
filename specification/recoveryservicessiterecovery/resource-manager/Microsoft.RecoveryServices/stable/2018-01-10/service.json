@@ -8363,6 +8363,7 @@
       "type": "object",
       "properties": {
         "properties": {
+          "x-ms-client-flatten": true,
           "$ref": "#/definitions/CreatePolicyInputProperties",
           "description": "Policy creation properties."
         }
@@ -8373,6 +8374,7 @@
       "type": "object",
       "properties": {
         "providerSpecificInput": {
+          "x-ms-client-flatten": true,
           "$ref": "#/definitions/PolicyProviderSpecificInput",
           "description": "The ReplicationProviderSettings."
         }

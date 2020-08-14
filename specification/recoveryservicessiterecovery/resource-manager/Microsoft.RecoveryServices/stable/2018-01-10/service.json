@@ -8363,7 +8363,6 @@
       "type": "object",
       "properties": {
         "properties": {
-          "x-ms-client-flatten": true,
           "$ref": "#/definitions/CreatePolicyInputProperties",
           "description": "Policy creation properties."
         }
@@ -8374,7 +8373,6 @@
       "type": "object",
       "properties": {
         "providerSpecificInput": {
-          "x-ms-client-flatten": true,
           "$ref": "#/definitions/PolicyProviderSpecificInput",
           "description": "The ReplicationProviderSettings."
         }
@@ -12967,7 +12965,20 @@
       "properties": {
         "instanceType": {
           "description": "The class type.",
-          "type": "string"
+          "type": "string",
+          "enum": [
+            "VMwareCbt",
+            "A2A",
+            "HyperVReplicaAzure",
+            "HyperVReplica2012R2",
+            "HyperVReplica2012",
+            "InMageAzureV2",
+            "InMage"
+          ],
+          "x-ms-enum": {
+            "name": "instanceType",
+            "modelAsString": true
+          }
         }
       },
       "discriminator": "instanceType"

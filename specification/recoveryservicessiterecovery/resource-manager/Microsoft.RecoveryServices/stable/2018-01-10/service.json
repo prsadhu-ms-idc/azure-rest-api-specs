@@ -8366,7 +8366,8 @@
           "$ref": "#/definitions/CreatePolicyInputProperties",
           "description": "Policy creation properties."
         }
-      }
+      },
+      "required": ["properties"]
     },
     "CreatePolicyInputProperties": {
       "description": "Policy creation properties.",
@@ -8376,7 +8377,8 @@
           "$ref": "#/definitions/PolicyProviderSpecificInput",
           "description": "The ReplicationProviderSettings."
         }
-      }
+      },
+      "required": ["providerSpecificInput"]
     },
     "CreateProtectionContainerInput": {
       "description": "Create protection container input.",
@@ -12981,6 +12983,7 @@
           }
         }
       },
+      "required": ["instanceType"],
       "discriminator": "instanceType"
     },
     "ProcessServer": {
